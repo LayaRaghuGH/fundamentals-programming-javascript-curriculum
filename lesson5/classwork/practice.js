@@ -2,14 +2,16 @@
 // Create a list of 4 car brands.
 // Print the first and last.
 // Then add another brand using push() and print the updated list.
-
-
-
+let brand = ["Lambhorgini", "Tesla", "Honda", "Ford"];
+console.log("First brand: ", brand[0])
+console.log("Last brand: ", brand[3]);
+brand.push("BMW");
+console.log("After append: ", brand)
 // Problem 2
 // Create a list of 5 numbers.
 // Print the number at index 2.
 // Then insert a new number at index 2 and print the updated list.
-
+let
 
 
 // Problem 3

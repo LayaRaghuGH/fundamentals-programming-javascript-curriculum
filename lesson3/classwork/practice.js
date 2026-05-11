@@ -1,22 +1,40 @@
 // Problem 1
 // Ask the user to enter their height in centimeters.
 // Print "Tall" if the height is greater than 170, otherwise print "Short".
-
+const prompt = require("prompt-sync")();
+let height = Number(prompt("What is your height in centimetres? "));
+if (height >= 170) {
+    console.log("Tall");
+} else { 
+    console.log("Short");
+}
 
 
 // Problem 2
 // Ask the user for their age.
 // If they are 18 or older, print "Adult", else print "Minor".
-
-
+let age = Number(prompt("What is your age: "));
+if (age >= 18) {
+    console.log("Adult");
+} else {
+    console.log("Minor"); 
+}
 
 // Problem 3
 // Ask the user to enter a number.
 // Print "Fizz" if it is divisible by 3, "Buzz" if divisible by 5,
 // print "FizzBuzz" if divisible by both 3 and 5,
 // otherwise print the number itself.
-
-
+let num = Number(prompt("Enter a number: "));
+if (num % 3 === 0 && num % 5 === 0) {
+    console.log("FizzBuzz"); // Check this first
+} else if (num % 3 === 0) {
+    console.log("Fizz");
+} else if (num % 5 === 0) {
+    console.log("Buzz");
+} else {
+    console.log(num);
+}
 
 // Problem 4
 // Generate a random number between 1 and 6 (inclusive).
